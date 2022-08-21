@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Button, Stack } from "@mui/material";
+import { Typography, Box, Button, Stack, Grid } from "@mui/material";
 
 const Cases = () => {
   return (
@@ -16,7 +16,7 @@ const Cases = () => {
       <Box
         sx={{
           maxWidth: { xs: "375px", md: "1326px" },
-          textAlign: { xs: "center", md: 'left' },
+          textAlign: { xs: "center", md: "left" },
           marginLeft: "auto",
           marginRight: "auto",
         }}
@@ -34,15 +34,14 @@ const Cases = () => {
             paddingTop: { xs: "0px", md: "72px" },
           }}
         >
-          Управляйте бизнесом
-          на основе цифр
+          Управляйте бизнесом на основе цифр
         </Typography>
         <Typography
           sx={{
-            visibility: {xs: 'collapse', md: 'visible'},
+            visibility: { xs: "collapse", md: "visible" },
             maxWidth: "854px",
-            marginTop: {xs:'-70px', md:"40px"},
-            marginBottom: {xs:'-40px', md: "20px"},
+            marginTop: { xs: "-70px", md: "40px" },
+            marginBottom: { xs: "-40px", md: "20px" },
             fontSize: "24px",
             lineHeight: "32px",
             textAlign: "left",
@@ -252,6 +251,22 @@ const Cases = () => {
             Общепит
           </Button>
         </Stack>
+        <Box mt="40px">
+          <Grid container spacing={2} columns={16}>
+            <Grid xs={16} md={8}>
+              <Box>xs=6 md=8</Box>
+            </Grid>
+            <Grid xs={16} md={4}>
+              <Box>xs=6 md=4</Box>
+            </Grid>
+            <Grid xs={16} md={4}>
+              <Box>xs=6 md=4</Box>
+            </Grid>
+            <Grid xs={16} md={8}>
+              <Box>xs=6 md=8</Box>
+            </Grid>
+          </Grid>
+        </Box>
       </Box>
     </Box>
   );
