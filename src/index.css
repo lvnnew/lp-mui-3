@@ -2,14 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
 }
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1d1814;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.heroicons .MUI_root {
-  font-size: 500px !important;
 }
