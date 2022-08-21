@@ -31,7 +31,7 @@ const Main = () => {
               src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/logo.svg"
               data-src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/logo.svg"
               alt=""
-            ></img>
+            />
             <Box
               sx={{
                 display: { xs: "none", sm: "none", md: "flex" },
