@@ -1,11 +1,11 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-const Main = (props: any) => {
+const Main = () => {
   return (
     <>
       <Box>
@@ -39,10 +39,12 @@ const Main = (props: any) => {
               }}
             >
               <li>
-                <a
+                <Button
+                  variant="text"
                   href="#"
                   style={{
-                    textDecoration: "none",
+                    textTransform: "none",
+                    fontSize: "1.1rem",
                     color: "#1d1814",
                     transition: "color .4s",
                     fontWeight: 500,
@@ -50,13 +52,15 @@ const Main = (props: any) => {
                   }}
                 >
                   Кейсы
-                </a>
+                </Button>
               </li>
               <li>
-                <a
+                <Button
+                  variant="text"
                   href="#"
                   style={{
-                    textDecoration: "none",
+                    textTransform: "none",
+                    fontSize: "1.1rem",
                     color: "#1d1814",
                     transition: "color .4s",
                     fontWeight: 500,
@@ -64,27 +68,31 @@ const Main = (props: any) => {
                   }}
                 >
                   Газета НФ
-                </a>
+                </Button>
               </li>
               <li>
-                <a
+                <Button
+                  variant="text"
                   href="#"
                   style={{
-                    textDecoration: "none",
+                    textTransform: "none",
+                    fontSize: "1.1rem",
                     color: "#1d1814",
                     transition: "color .4s",
                     fontWeight: 500,
                   }}
                 >
                   Отзывы
-                </a>
+                </Button>
               </li>
             </Box>
             <Box display={{ xs: "none", sm: "none", md: "flex" }}>
-              <a
+              <Button
+                variant="text"
                 href="tel:89000000000"
                 style={{
-                  textDecoration: "none",
+                  textTransform: "none",
+                  fontSize: "1.1rem",
                   color: "#1d1814",
                   transition: "color .4s",
                   fontWeight: 500,
@@ -92,18 +100,20 @@ const Main = (props: any) => {
                 }}
               >
                 8 000 000-00-00
-              </a>
-              <a
+              </Button>
+              <Button
+                variant="text"
                 href="#"
                 style={{
-                  textDecoration: "none",
+                  textTransform: "none",
+                  fontSize: "1.1rem",
                   color: "#e92a2a",
                   transition: "color .4s",
                   fontWeight: 500,
                 }}
               >
                 Консультация
-              </a>
+              </Button>
             </Box>
           </Box>
         </Box>
@@ -301,12 +311,12 @@ const Main = (props: any) => {
                       fontWeight: 500,
                       fontSize: "18px",
                       lineHeight: "24px",
-                      textTransform: 'inherit',
+                      textTransform: "inherit",
                       height: "60px",
                       cursor: "pointer",
                       transition: "background .3s,border-color .3s,color .3s",
-                      ':hover': {
-                        background: '#cc1010',
+                      ":hover": {
+                        background: "#cc1010",
                       },
                     }}
                   >
