@@ -251,22 +251,6 @@ const Cases = () => {
             Общепит
           </Button>
         </Stack>
-        <Box mt="40px">
-          <Grid container spacing={2} columns={16}>
-            <Grid xs={16} md={8}>
-              <Box>xs=6 md=8</Box>
-            </Grid>
-            <Grid xs={16} md={4}>
-              <Box>xs=6 md=4</Box>
-            </Grid>
-            <Grid xs={16} md={4}>
-              <Box>xs=6 md=4</Box>
-            </Grid>
-            <Grid xs={16} md={8}>
-              <Box>xs=6 md=8</Box>
-            </Grid>
-          </Grid>
-        </Box>
       </Box>
     </Box>
   );

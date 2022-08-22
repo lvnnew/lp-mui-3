@@ -1,4 +1,5 @@
 import Cases from "./components/Cases";
+import Finance from "./components/Finance";
 import Header from "./components/Main";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Cases />
+      <Finance />
     </>
   );
 }
