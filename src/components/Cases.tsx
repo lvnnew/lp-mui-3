@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Button, Stack, Grid } from "@mui/material";
+import { Typography, Box, Button, Stack, } from "@mui/material";
 
 const Cases = () => {
   return (
