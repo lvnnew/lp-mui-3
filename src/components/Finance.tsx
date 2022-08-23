@@ -383,8 +383,8 @@ const Finance = () => {
         </Box>
         <Box
           sx={{
-            paddingTop: "110px",
-            paddingBottom: "300px",
+            paddingTop: { xs: "44px", md: "110px" },
+            paddingBottom: { xs: "95px", md: "300px" },
           }}
         >
           <Box
