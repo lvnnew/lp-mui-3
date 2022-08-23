@@ -1,5 +1,9 @@
 import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const Finance = () => {
   return (
@@ -321,16 +325,32 @@ const Finance = () => {
         </Box>
         <Box
           sx={{
-            textAlign: "center",
-            paddingTop: {xs:'10px',md:"212px"},
-            paddingBottom: "110px",
-            marginLeft: "auto",
-            marginRight: "auto",
+            paddingTop: { xs: "0px", md: "212px" },
+            paddingBottom: { xs: "0px", md: "110px" },
           }}
         >
-          <Container
+          <Box
             sx={{
+              display: { xs: "none", md: "inherit" },
               width: "100%",
+              height: "auto",
+              maxWidth: "1500px",
+              position: "relative",
+            }}
+          >
+            <img
+              style={{
+                width: "100%",
+              }}
+              src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/map.png"
+              data-src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/map.png"
+              alt=""
+            />
+          </Box>
+          <Box
+            sx={{
+              display: { xs: "inherit", md: "none" },
+              width: "90%",
               height: "auto",
               maxWidth: "1500px",
               position: "relative",
@@ -343,7 +363,7 @@ const Finance = () => {
             />
             <Box
               sx={{
-                display: { xs: "block important", md: "none" },
+                display: { xs: "block", md: "none" },
                 width: "188px",
                 position: "absolute",
                 top: "450px",
@@ -359,7 +379,284 @@ const Finance = () => {
                 alt=""
               />
             </Box>
-          </Container>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            paddingTop: "110px",
+            paddingBottom: "300px",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              position: "relative",
+              flexWrap: "wrap",
+            }}
+          >
+            <Box>
+              <Typography
+                variant="h2"
+                sx={{
+                  maxWidth: "468px",
+                  fontWeight: 500,
+                  fontSize: { xs: "36px", md: "72px" },
+                  lineHeight: { xs: "40px", md: "76px" },
+                  textAlign: { xs: "center", md: "inherit" },
+                }}
+              >
+                Что <span>входит</span>
+                <Box
+                  sx={{
+                    display: { xs: "none", md: "inherit" },
+                    position: "absolute",
+                    left: "110px",
+                    top: "75px",
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="302"
+                    height="69"
+                    viewBox="0 0 302 69"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 46.9225C39.3254 56.7384 74.8495 62.7291 131.592 65.503C153.087 66.5538 174.608 64.6976 196.021 62.5434C232.27 58.8966 260.169 58.4899 282.156 44.3177C364.146 -8.53063 62.3979 -4.49702 27.3392 11.9101C0.032768 24.6893 1.3439 58.9073 118.914 66.6791C236.484 74.4509 322.543 46.3102 296.245 24.5493C275.206 7.14065 145.117 5.68204 78.4865 11.9101"
+                      stroke="#FC3838"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </Box>
+                <Box
+                  sx={{
+                    display: { xs: "inherit", md: "none" },
+                    position: "absolute",
+                    left: "145px",
+                    top: "-12px",
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="157px"
+                    height="69px"
+                    viewBox="0 0 302 69"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 46.9225C39.3254 56.7384 74.8495 62.7291 131.592 65.503C153.087 66.5538 174.608 64.6976 196.021 62.5434C232.27 58.8966 260.169 58.4899 282.156 44.3177C364.146 -8.53063 62.3979 -4.49702 27.3392 11.9101C0.032768 24.6893 1.3439 58.9073 118.914 66.6791C236.484 74.4509 322.543 46.3102 296.245 24.5493C275.206 7.14065 145.117 5.68204 78.4865 11.9101"
+                      stroke="#FC3838"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </Box>
+                <br /> в аутсорсинг
+              </Typography>
+              <Box
+                sx={{
+                  marginTop: { xs: "24px", md: "48px" },
+                  marginBottom: { xs: "24px", md: "0px" },
+                  width: { xs: "100%", md: "503px" },
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: { xs: "center", md: "initial" },
+                }}
+              >
+                <Button
+                  sx={{
+                    marginBottom: { xs: "7px", md: "12px" },
+                    marginRight: { xs: "7px", md: "12px" },
+                    borderColor: "#e92a2a",
+                    color: "#e92a2a",
+                    textTransform: "none",
+                    display: "inline-block",
+                    padding: { xs: "8px 15px", md: "8px 24px" },
+                    border: "1px solid #e92a2a",
+                    fontSize: { xs: ".7rem", md: "1.1rem" },
+                    fontWeight: "400",
+                    borderRadius: "31px",
+                    transition: "border-color .3s,color .3s",
+                    ":hover": {
+                      color: "#e92a2a",
+                      border: "1px solid #e92a2a",
+                    },
+                  }}
+                >
+                  01 Финансовый директор
+                </Button>
+                <Button
+                  sx={{
+                    marginBottom: { xs: "7px", md: "12px" },
+                    marginRight: { xs: "7px", md: "12px" },
+                    borderColor: "#1d1814",
+                    color: "#1d1814",
+                    textTransform: "none",
+                    display: "inline-block",
+                    padding: { xs: "8px 15px", md: "8px 24px" },
+                    border: "1px solid #1d1814",
+                    fontSize: { xs: ".7rem", md: "1.1rem" },
+                    fontWeight: "400",
+                    borderRadius: "31px",
+                    transition: "border-color .3s,color .3s",
+                    ":hover": {
+                      color: "#e92a2a",
+                      border: "1px solid #e92a2a",
+                    },
+                  }}
+                >
+                  02 Онлайн-школа
+                </Button>
+                <Button
+                  sx={{
+                    marginBottom: { xs: "7px", md: "12px" },
+                    marginRight: { xs: "7px", md: "12px" },
+                    borderColor: "#1d1814",
+                    color: "#1d1814",
+                    textTransform: "none",
+                    display: "inline-block",
+                    padding: { xs: "8px 15px", md: "8px 24px" },
+                    border: "1px solid #1d1814",
+                    fontSize: { xs: ".7rem", md: "1.1rem" },
+                    fontWeight: "400",
+                    borderRadius: "31px",
+                    transition: "border-color .3s,color .3s",
+                    ":hover": {
+                      color: "#e92a2a",
+                      border: "1px solid #e92a2a",
+                    },
+                  }}
+                >
+                  03 База знаний
+                </Button>
+                <Button
+                  sx={{
+                    marginBottom: { xs: "7px", md: "12px" },
+                    marginRight: { xs: "7px", md: "12px" },
+                    borderColor: "#1d1814",
+                    color: "#1d1814",
+                    textTransform: "none",
+                    display: "inline-block",
+                    padding: { xs: "8px 15px", md: "8px 24px" },
+                    border: "1px solid #1d1814",
+                    fontSize: { xs: ".7rem", md: "1.1rem" },
+                    fontWeight: "400",
+                    borderRadius: "31px",
+                    transition: "border-color .3s,color .3s",
+                    ":hover": {
+                      color: "#e92a2a",
+                      border: "1px solid #e92a2a",
+                    },
+                  }}
+                >
+                  04 Отдел качества
+                </Button>
+                <Button
+                  sx={{
+                    marginBottom: { xs: "7px", md: "12px" },
+                    marginRight: { xs: "7px", md: "12px" },
+                    borderColor: "#1d1814",
+                    color: "#1d1814",
+                    textTransform: "none",
+                    display: "inline-block",
+                    padding: { xs: "8px 15px", md: "8px 24px" },
+                    border: "1px solid #1d1814",
+                    fontSize: { xs: ".7rem", md: "1.1rem" },
+                    fontWeight: "400",
+                    borderRadius: "31px",
+                    transition: "border-color .3s,color .3s",
+                    ":hover": {
+                      color: "#e92a2a",
+                      border: "1px solid #e92a2a",
+                    },
+                  }}
+                >
+                  05 Мероприятия
+                </Button>
+              </Box>
+            </Box>
+            <Box
+              sx={{
+                maxWidth: "660px",
+                paddingLeft: "15px",
+                paddingRight: "15px",
+              }}
+            >
+              <img
+                style={{
+                  borderRadius: "30px",
+                  width: "100%",
+                }}
+                src="https://noboring-finance.ru/wp-content/uploads/2022/06/findir2-2.png"
+                data-src="https://noboring-finance.ru/wp-content/uploads/2022/06/findir2-2.png"
+                alt=""
+              />
+              <Box
+                sx={{
+                  position: "relative",
+                  zIndex: "2",
+                  marginTop: "-50px",
+                  maxWidth: "612px",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  padding: "24px 32px",
+                  background: "#fdfdfd",
+                  border: "1px solid #ededed",
+                  boxSizing: "border-box",
+                  boxShadow:
+                    "0px 6.71216px 24.1638px -7.38338px rgb(0 0 0 / 5%)",
+                  borderRadius: "20px",
+                }}
+              >
+                <Box>
+                  <Typography sx={{ fontWeight: "500", fontSize: "20px" }}>
+                    01
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontWeight: 500,
+                      fontSize: "24px",
+                      lineHeight: "32px",
+                      color: "#1d1814",
+                    }}
+                  >
+                    Финансовый директор
+                  </Typography>
+                  <Box>
+                    <svg
+                      style={{
+                        display: "block",
+                        width: "40px",
+                        height: "27px",
+                        position: "absolute",
+                        left: "21px",
+                        top: "25px",
+                      }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="27"
+                      viewBox="0 0 40 27"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.708568 23.5088C8.70703 26.5088 16.0314 27.3182 25 23.9848C32.793 21.0883 33.717 22.8803 36.5 16.002C43.6711 -1.72201 15.7116 5.002 8.88252 10.2865C3.72678 14.2762 0.883213 26.1146 18.2541 24.8984C40.3929 23.3484 41.6788 11.1305 37.4132 5.0135C32.6017 -1.88635 6.2639 -1.49029 0.707455 14.0096"
+                        stroke="#FC3838"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </Box>
+                </Box>
+                <Box>
+                  Возьмет ответственность за финансовый учет
+                  и&nbsp;планирование. Организует сбор цифр, проанализирует
+                  показатели, предложит пути развития бизнеса
+                </Box>
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
