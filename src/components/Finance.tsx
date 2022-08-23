@@ -322,7 +322,7 @@ const Finance = () => {
         <Box
           sx={{
             textAlign: "center",
-            paddingTop: "212px",
+            paddingTop: {xs:'10px',md:"212px"},
             paddingBottom: "110px",
             marginLeft: "auto",
             marginRight: "auto",
