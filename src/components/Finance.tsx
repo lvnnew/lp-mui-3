@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
 const Finance = () => {
   return (
@@ -41,6 +41,7 @@ const Finance = () => {
             >
               <Box
                 sx={{
+                  position: "relative",
                   maxWidth: { xs: "456px", md: "526px" },
                   textAlign: { xs: "center", md: "inherit" },
                 }}
@@ -53,7 +54,78 @@ const Finance = () => {
                     lineHeight: { xs: "50px", md: "76px" },
                   }}
                 >
-                  <span>Прозрачная</span>
+                  Прозрачная
+                  <Box
+                    sx={{
+                      display: { xs: "none", md: "inherit" },
+                      position: "absolute",
+                      left: "-40px",
+                      top: "-3px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="492"
+                      height="106"
+                      viewBox="0 0 492 106"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 71.8513C68.42 88.17 130.53 97.6364 236.391 101.425C256.732 102.152 277.103 100.591 297.323 98.2568C367.41 90.1669 419.768 92.3402 460 67.8324C593.852 -13.7043 101.235 -7.48104 43.9999 17.8326C-0.579048 37.5489 1.56143 90.3419 193.5 102.333C385.439 114.323 525.934 70.9065 483 37.3329C448.653 10.4741 236.277 8.22365 127.5 17.8326"
+                        stroke="#FC3838"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </Box>
+                  <Box
+                    sx={{
+                      display: { xs: "inherit", md: "none" },
+                      position: "absolute",
+                      left: "-15px",
+                      top: "-26px",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80%"
+                      height="104px"
+                      viewBox="0 0 492 106"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 71.8513C68.42 88.17 130.53 97.6364 236.391 101.425C256.732 102.152 277.103 100.591 297.323 98.2568C367.41 90.1669 419.768 92.3402 460 67.8324C593.852 -13.7043 101.235 -7.48104 43.9999 17.8326C-0.579048 37.5489 1.56143 90.3419 193.5 102.333C385.439 114.323 525.934 70.9065 483 37.3329C448.653 10.4741 236.277 8.22365 127.5 17.8326"
+                        stroke="#FC3838"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </Box>
+                  <Box
+                    sx={{
+                      display: { xs: "none", md: "inherit" },
+                      position: "absolute",
+                      left: "-40px",
+                      top: "-3px",
+                      maxWidth: { xs: "23px)" },
+                      maxHeight: { xs: "54px" },
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="492"
+                      height="106"
+                      viewBox="0 0 492 106"
+                      fill="none"
+                    >
+                      <path
+                        d="M1 71.8513C68.42 88.17 130.53 97.6364 236.391 101.425C256.732 102.152 277.103 100.591 297.323 98.2568C367.41 90.1669 419.768 92.3402 460 67.8324C593.852 -13.7043 101.235 -7.48104 43.9999 17.8326C-0.579048 37.5489 1.56143 90.3419 193.5 102.333C385.439 114.323 525.934 70.9065 483 37.3329C448.653 10.4741 236.277 8.22365 127.5 17.8326"
+                        stroke="#FC3838"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </Box>
                   <br /> система финучета
                 </Typography>
                 <Typography
@@ -122,14 +194,18 @@ const Finance = () => {
               }}
             >
               Онлайн-экскурсия по аутсорсингу финансов{" "}
-              <img
-                style={{
-                  display: "none",
+              <Button
+                disabled
+                sx={{
+                  display: { xs: "none", md: "initial" },
                 }}
-                src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-label.svg"
-                data-src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-label.svg"
-                alt=""
-              ></img>
+              >
+                <img
+                  src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-label.svg"
+                  data-src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-label.svg"
+                  alt=""
+                />
+              </Button>
             </Typography>
             <Typography
               sx={{
@@ -192,17 +268,98 @@ const Finance = () => {
               </Typography>
             </Box>
           </Box>
-          <img
-            style={{
+          <Box
+            sx={{
+              display: { xs: "inherit", md: "none" },
               position: "absolute",
               top: "-103px",
-              width: "174px",
               right: "auto",
               left: "calc(50% - 90px)",
             }}
-            src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-banner.png?ver=25"
-            alt=""
-          />
+          >
+            <img
+              style={{
+                width: "174px",
+              }}
+              src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-banner.png?ver=25"
+              alt=""
+            />
+          </Box>
+          <Box
+            sx={{
+              display: { xs: "none", md: "inherit" },
+              position: "absolute",
+              right: "83px",
+              top: "65px",
+            }}
+          >
+            <img
+              style={{
+                width: "490px",
+              }}
+              src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-banner.png?ver=25"
+              alt=""
+            />
+          </Box>
+          <Box
+            sx={{
+              display: { xs: "inherit", md: "none" },
+              position: "absolute",
+              top: "-103px",
+              right: "auto",
+              left: "calc(50% - 90px)",
+            }}
+          >
+            <img
+              style={{
+                width: "174px",
+              }}
+              src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/ex-banner.png?ver=25"
+              alt=""
+            />
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            textAlign: "center",
+            paddingTop: "212px",
+            paddingBottom: "110px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          <Container
+            sx={{
+              width: "100%",
+              height: "auto",
+              maxWidth: "1500px",
+              position: "relative",
+            }}
+          >
+            <img
+              src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/map.png"
+              data-src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/map.png"
+              alt=""
+            />
+            <Box
+              sx={{
+                display: { xs: "block important", md: "none" },
+                width: "188px",
+                position: "absolute",
+                top: "450px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                }}
+                loading="lazy"
+                src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/map-text.png"
+                data-src="https://noboring-finance.ru/wp-content/themes/noboring-finance/assets/img/map-text.png"
+                alt=""
+              />
+            </Box>
+          </Container>
         </Box>
       </Box>
     </Box>
